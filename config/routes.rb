@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   get 'page/about'
 
-  get 'cart/index'
+  get 'cart' => 'cart#index'
+  get '/cart/clear' => 'cart#clearCart'
+  get '/cart/add' => 'cart#add'
 
   resources :products
 
