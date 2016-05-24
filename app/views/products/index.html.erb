@@ -10,7 +10,7 @@
       <tr>
         <td><%= product.name %></td>
         <td><%= product.price %></td>
-        <td></td>
+        <td><a href="/cart/<%= product.id%>"> Add to Cart</a></td>
       </tr>
     <%end %>
   </table>
