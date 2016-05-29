@@ -1,7 +1,9 @@
-<h1>Your Cart</h1>
+<% if notice %>
 
-
-<% @cart.product.each do |name| %>
-  <%= name %>
-
+<%= notice %>
 <% end %>
+Your Pragmatic Cart
+
+    <% @cart.line_item.each do |item| %>
+    <%= item.product.name %>
+    <% end %>
