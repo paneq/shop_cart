@@ -1,12 +1,7 @@
 <h1>Your Cart</h1>
 
-<ul>
-<% @cart.each do | id, quantity | %>
-  <% product = Product.find_by_id(id) %>
 
-    <li>
-      <%= link_to product.name, product %>
+<% @cart.product.each do |name| %>
+  <%= name %>
 
-    </li>
 <% end %>
-</ul>
