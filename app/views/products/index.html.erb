@@ -10,7 +10,7 @@
       <tr>
         <td><%= product.name %></td>
         <td><%= product.price %></td>
-        <td><%= link_to("Add to Cart", cart_add_path)%></td>
+        <td><%= link_to("Add to Cart", cart_add_path(product_id: product.id ))%></td>
       </tr>
     <%end %>
   </table>
